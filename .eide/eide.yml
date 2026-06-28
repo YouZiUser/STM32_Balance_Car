@@ -1,0 +1,276 @@
+version: "4.1"
+name: banlance_car
+type: ARM
+deviceName: null
+packDir: .pack/Keil/STM32F1xx_DFP.2.4.0
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: user
+      files:
+        - path: user/main.c
+        - path: user/system_stm32f10x.c
+        - path: user/stm32f10x_it.h
+        - path: user/stm32f10x_it.c
+        - path: user/app_bat.c
+        - path: user/app_bat.h
+        - path: user/app_usart2.c
+        - path: user/app_usart2.h
+        - path: user/app_button.c
+        - path: user/app_button.h
+        - path: user/app_pwm.c
+        - path: user/app_pwm.h
+        - path: user/app_encoder.c
+        - path: user/app_encoder.h
+        - path: user/app_mpu6050.c
+        - path: user/app_mpu6050.h
+        - path: user/app_pid.c
+        - path: user/app_pid.h
+        - path: user/app_motor.c
+        - path: user/app_motor.h
+        - path: user/app_control.c
+        - path: user/app_control.h
+        - path: user/app_rc.c
+        - path: user/app_rc.h
+      folders: []
+    - name: startup
+      files:
+        - path: startup/startup_stm32f10x_md.s
+      folders: []
+    - name: my_lib
+      files:
+        - path: my_lib/button.c
+        - path: my_lib/button.h
+        - path: my_lib/delay.c
+        - path: my_lib/delay.h
+        - path: my_lib/i2c.c
+        - path: my_lib/i2c.h
+        - path: my_lib/oled.c
+        - path: my_lib/oled.h
+        - path: my_lib/oled_default_font.h
+        - path: my_lib/oled_font.h
+        - path: my_lib/pid.c
+        - path: my_lib/pid.h
+        - path: my_lib/qmath.c
+        - path: my_lib/qmath.h
+        - path: my_lib/si2c.c
+        - path: my_lib/si2c.h
+        - path: my_lib/spi.c
+        - path: my_lib/spi.h
+        - path: my_lib/str_cmd.c
+        - path: my_lib/str_cmd.h
+        - path: my_lib/task.h
+        - path: my_lib/usart.c
+        - path: my_lib/usart.h
+      folders: []
+    - name: std_periph_driver
+      files:
+        - path: std_periph_driver/inc/misc.h
+        - path: std_periph_driver/src/misc.c
+        - path: std_periph_driver/inc/stm32f10x.h
+        - path: std_periph_driver/inc/stm32f10x_adc.h
+        - path: std_periph_driver/src/stm32f10x_adc.c
+        - path: std_periph_driver/inc/stm32f10x_bkp.h
+        - path: std_periph_driver/src/stm32f10x_bkp.c
+        - path: std_periph_driver/inc/stm32f10x_can.h
+        - path: std_periph_driver/src/stm32f10x_can.c
+        - path: std_periph_driver/inc/stm32f10x_cec.h
+        - path: std_periph_driver/src/stm32f10x_cec.c
+        - path: std_periph_driver/inc/stm32f10x_crc.h
+        - path: std_periph_driver/src/stm32f10x_crc.c
+        - path: std_periph_driver/inc/stm32f10x_dac.h
+        - path: std_periph_driver/src/stm32f10x_dac.c
+        - path: std_periph_driver/inc/stm32f10x_dbgmcu.h
+        - path: std_periph_driver/src/stm32f10x_dbgmcu.c
+        - path: std_periph_driver/inc/stm32f10x_dma.h
+        - path: std_periph_driver/src/stm32f10x_dma.c
+        - path: std_periph_driver/inc/stm32f10x_exti.h
+        - path: std_periph_driver/src/stm32f10x_exti.c
+        - path: std_periph_driver/inc/stm32f10x_flash.h
+        - path: std_periph_driver/src/stm32f10x_flash.c
+        - path: std_periph_driver/inc/stm32f10x_fsmc.h
+        - path: std_periph_driver/src/stm32f10x_fsmc.c
+        - path: std_periph_driver/inc/stm32f10x_gpio.h
+        - path: std_periph_driver/src/stm32f10x_gpio.c
+        - path: std_periph_driver/inc/stm32f10x_i2c.h
+        - path: std_periph_driver/src/stm32f10x_i2c.c
+        - path: std_periph_driver/inc/stm32f10x_iwdg.h
+        - path: std_periph_driver/src/stm32f10x_iwdg.c
+        - path: std_periph_driver/inc/stm32f10x_pwr.h
+        - path: std_periph_driver/src/stm32f10x_pwr.c
+        - path: std_periph_driver/inc/stm32f10x_rcc.h
+        - path: std_periph_driver/src/stm32f10x_rcc.c
+        - path: std_periph_driver/inc/stm32f10x_rtc.h
+        - path: std_periph_driver/src/stm32f10x_rtc.c
+        - path: std_periph_driver/inc/stm32f10x_sdio.h
+        - path: std_periph_driver/src/stm32f10x_sdio.c
+        - path: std_periph_driver/inc/stm32f10x_spi.h
+        - path: std_periph_driver/src/stm32f10x_spi.c
+        - path: std_periph_driver/inc/stm32f10x_tim.h
+        - path: std_periph_driver/src/stm32f10x_tim.c
+        - path: std_periph_driver/inc/stm32f10x_usart.h
+        - path: std_periph_driver/src/stm32f10x_usart.c
+        - path: std_periph_driver/inc/stm32f10x_wwdg.h
+        - path: std_periph_driver/src/stm32f10x_wwdg.c
+      folders: []
+    - name: test
+      files:
+        - path: test/bat_test.c
+        - path: test/bat_test.h
+        - path: test/encoder_test.c
+        - path: test/encoder_test.h
+        - path: test/mpu6050_test.c
+        - path: test/mpu6050_test.h
+        - path: test/qmath_test.h
+        - path: test/qmath_test.c
+        - path: test/pwm_test.c
+        - path: test/pwm_test.h
+      folders: []
+    - name: ::Device
+      files: []
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 1cbc280cc38c64e767a3922859d7b10e
+targets:
+  default:
+    cppPreprocessAttrs:
+      defineList:
+        - STM32F10X_MD
+      incList:
+        - std_periph_driver/inc
+        - user
+        - my_lib
+        - my_lib/font
+        - my_lib/font/.h
+        - test
+        - .cmsis/include
+        - RTE/_default
+      libList: []
+    excludeList: []
+    settings:
+      debugger: cortex-debug
+    toolchain: AC5
+    toolchainConfigMap:
+      AC5:
+        archExtensions: ""
+        cpuType: Cortex-M3
+        floatingPointHardware: none
+        options:
+          version: 4
+          afterBuildTasks: []
+          asm-compiler:
+            defines: []
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: --no-multibyte-chars
+            C_FLAGS: --no-multibyte-chars
+            c99-mode: true
+            gnu-extensions: true
+            one-elf-section-per-function: true
+            optimization: level-0
+            warnings: all-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: true
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            output-format: elf
+            ro-base: "0x08000000"
+            rw-base: "0x20000000"
+            xo-base: ""
+        scatterFilePath: ""
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x5000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x10000"
+                startAddr: "0x8000000"
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: false
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+      OpenOCD:
+        baseAddr: "0x08000000"
+        bin: ""
+        interface: stlink
+        target: stm32f1x
+    uploader: OpenOCD
