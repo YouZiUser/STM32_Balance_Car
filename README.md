@@ -125,7 +125,7 @@ angle = 0.95238 × angle_gyro + 0.04762 × angle_accel
 
 1. 克隆仓库
    ```bash
-   git clone https://github.com/<your-username>/STM32_Balance_Car.git
+   git clone https://github.com/YouZiUser/STM32_Balance_Car.git
    ```
 
 2. 用 Keil MDK 打开 `banlance_car.uvprojx`
